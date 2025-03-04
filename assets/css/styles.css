@@ -19,6 +19,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 
 }
 
@@ -77,8 +78,39 @@ a{
     padding: var(--gap);
 }
 
+.intro-content{
+    position: relative;
+    top: -8rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+}
+
+.intro-text-content , .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 8rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.intro-img img , .intro-img svg{
+    max-width: 100%;
+    height: auto;
+}
+
 .section{
     min-height: 100vh;
+}
+
+.menu-spacing{
+    height: 65px;
 }
 
 .menu{
